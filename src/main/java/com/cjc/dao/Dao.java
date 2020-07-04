@@ -10,5 +10,5 @@ public interface Dao extends CrudRepository<Student,Integer> {
 int sub();
 	int add();
 	int play();
-	int mal();
+	
 }
