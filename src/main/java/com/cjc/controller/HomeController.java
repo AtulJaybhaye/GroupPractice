@@ -38,6 +38,12 @@ public class HomeController {
 		return list;
 	}
 
+        @GetMapping("/display1")
+	public List<Student> display1() {
+		List<Student> list=service.display();
+		return list;
+	}
+
 	@PostMapping("/update")
 	public int update(@RequestBody Student student) {
 		service.update(student);
